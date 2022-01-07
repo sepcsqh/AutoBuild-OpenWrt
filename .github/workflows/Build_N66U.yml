@@ -72,12 +72,12 @@ jobs:
         ./scripts/feeds install -a
         ./scripts/feeds install -a
         
-    #- name: Import external feeds - JerryKuKu Argon
+    #- name: Import external feeds - N66U
     #  working-directory: ./openwrt
     #  run: |
     #    git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon-jerrykuku   
   
-    - name: Configuration Customization - Build_Redmi_AC2100
+    - name: Configuration Customization - Build_N66U
       env:
         CONFIG_FILE: 'N66U.config'
       run: |
